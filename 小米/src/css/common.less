@@ -1,0 +1,65 @@
+//引入颜色代码
+@import "color";
+// 引入重写样式
+@import "cover";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+//常用类名
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.clearfix {
+  zoom: 1;
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+  }
+}
+
+.dashed-line {
+  height: 1px;
+  border-top: 1px dashed @gray_light;
+  margin-bottom: 20px;
+}
+
+.spacing {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+// 小列表
+.list {
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+.list:last-child {
+  margin-bottom: 0px;
+}
+.list .list-caption {
+  display: block;
+  color: rgb(164, 164, 164);
+}
+
+.list .list-content {
+  display: block;
+  color: #dbdbdb;
+}
